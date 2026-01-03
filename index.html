@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Adhish's Portfolio</div>
+        <div>
+            <ul class="nav-links">
+            
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobile">
+        <div class="logo">Adhish's Portfolio</div>
+        <div class="mobile-menu">
+            <div class="mobile-icon"  onclick="toggleMenu()">
+                   
+               
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                
+                  <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                   <li><a href="#about" onclick="toggleMenu()">About me</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+
+    </nav>
+    <section id ="profile">
+        <div class="photo_container">
+            <img src="./page_icons/me3.jpg" alt="profile_photo">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1"> Hello, I'm</p>
+            <h1 class="title">Adhish</h1>
+            <p class="section_text_p2">Recent MS Graduate</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./page_icons/Resume.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="social-container">
+                <img src="./page_icons/logo.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/adhish-ach/' ">
+            
+                <img src="./page_icons/github-mark.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/aachary2' ">
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore my</p>
+        <h1 class="h1-title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./page_icons/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./page_icons/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Angular</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./page_icons/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./page_icons/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Typescript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                 <div class="details-containers">
+                    <h2 class="experience-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./page_icons/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./page_icons/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./page_icons/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./page_icons/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+         <p class="section_text_p1">Learn more </p>
+  <h1 class="title">About me</h1>
+  <div class="section-container">
+    
+    <div class="about-details-container">
+        <div class="about-containers">
+            <div class="details-containers">
+                <img src="./page_icons/education.png" alt="education icon" class="icon"/>
+                <h3>Education</h3>
+                
+                <p>B.S. in Computer Science <br/>at Illinois Institute of Technology <br/>M.S. in Computer Science <br/>at George Mason University </p>
+            </div>
+              <div class="text-container">
+            <p>
+               I'm a recent MS computer science graduate. In my undergraduate studies, I created prototype applications in an augmented reality setting for a local art museum and enhanced my problem solving ability. After graduating with a bachelor's degree, I worked as a cloud engineer where 
+            I investigated a host of database related issues such as troubleshooting network connectivity issues, database workload configurations,and database performance. I am now seeking employment opportunities to apply my skills and learn new technologies to further my understanding in a fast-evolving tech environment. 
+
+            </p>
+        </div>
+        </div>
+      
+    </div>
+
+  </div>
+    </section>
+   <section id="projects">
+  <p class="section_text_p1">Browse my Recent</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="./page_icons/project1.png" alt="Project 1" class="project-img" />
+      <h2 class="project-title">Project 1: Flashcard App</h2>
+      <div class="btn-container">
+        <button class="btn project-btn">View Project Website</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+       <video class="project-video" controls>
+    <source src="./page_icons/SurveyDemo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+      
+      <h2 class="project-title">Project 2: Campus Survey</h2>
+      
+    </div>
+  </div>
+</section>
+<section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./page_icons/mail-icon.png" alt="email-icon" class="icon contact-icon">
+            <p><a href="mailto:adhishacharya@gmail.com">adhishacharya@gmail.com</a></p>
+        </div>
+         <div class="contact-info-container">
+            <img src="./page_icons/logo.png" alt="linkedin-icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/adhish-ach/">Linkedin</a></p>
+        </div>
+    </div>
+    
+</section>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+            
+                  <li><a href="#experience">Experience</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <p> Copyright &#169; 2026 Adhish Acharya</p>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>
